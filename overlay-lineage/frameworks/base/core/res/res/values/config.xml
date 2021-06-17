@@ -19,14 +19,6 @@
 
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
 
-    <!-- List of biometric sensors on the device, in decreasing strength. Consumed by AuthService
-     when registering authenticators with BiometricService. Format must be ID:Modality:Strength,
-     where: IDs are unique per device, Modality as defined in BiometricAuthenticator.java,
-     and Strength as defined in Authenticators.java -->
-    <string-array name="config_biometric_sensors" translatable="false" >
-        <item>0:2:15</item> <!-- ID0:Fingerprint:Strong -->
-    </string-array>
-
     <!-- Flag indicating whether we should enable the adaptive sleep.-->
     <bool name="config_adaptive_sleep_available">true</bool>
 
@@ -39,5 +31,12 @@
     <!-- Live Captions provided by Google's Device Personalization Service package  -->
     <string name="config_defaultSystemCaptionsManagerService">com.google.android.as/com.google.android.apps.miphone.aiai.captions.SystemCaptionsManagerService</string>
     <string name="config_defaultSystemCaptionsService">com.google.android.as/com.google.android.apps.miphone.aiai.captions.CaptionsService</string>
+
+    <!-- Recents text and image selection for Pixel Launcher (not supported by Launcher3) -->
+    <string name="config_defaultContentSuggestionsService" translatable="false">com.google.android.as/com.google.android.apps.miphone.aiai.app.AiAiContentSuggestionsService</string>
+
+    <!-- List of comma separated package names for which we the system will not show crash, ANR,
+         etc. dialogs. -->
+    <string translatable="false" name="config_appsNotReportingCrashes">com.google.android.euicc</string>
 
 </resources>
