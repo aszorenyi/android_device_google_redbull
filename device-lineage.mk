@@ -14,6 +14,10 @@
 # limitations under the License.
 #
 
+# Build nevessary packages for product
+PRODUCT_PACKAGES += \
+    libhidltransport.product
+
 # Build necessary packages for system_ext
 PRODUCT_PACKAGES += \
     com.qualcomm.qti.bluetooth_audio@1.0 \
@@ -32,7 +36,10 @@ PRODUCT_PACKAGES += \
     libcodec2_vndk.vendor \
     libcppbor.vendor:64 \
     libdisplayconfig.qti.vendor:32 \
-    libhidltransport.product \
+    libdrm.vendor \
+    libgooglecamerahal.vendor \
+    libgooglecamerahalutils.vendor \
+    libhidltransport.vendor \
     libhwbinder.vendor \
     libjson \
     libkeymaster_messages.vendor:64 \
