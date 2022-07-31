@@ -14,7 +14,7 @@
 <resources>
 
     <!-- Smart charging -->
-    <bool name="config_smartChargingAvailable">true</bool>
+    <bool name="config_smartChargingAvailable">false</bool>
 
     <!-- Whether the device supports Smart Pixels -->
     <bool name="config_supportSmartPixels">true</bool>
